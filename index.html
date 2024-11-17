@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>weather app </title>
+<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
 </head>
-<body>
-    <header>
-        <form>
-            <input type="search" placeholder="Enter a city ...." required 
+ <body>
+    <div class="weather-app">
+      <header>
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
             class="search-input"
-            id="search-input"/>
-            <input type="submit" value="Seach" class="search-button"/>
+            id="search-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
         </form>
-    </header>
-    <div class="current-weather">
+      </header>
+      <main>
+        <div class="current-weather">
           <div>
             <h1 class="current-city" id="current-city">Paris</h1>
             <p class="current-details">
