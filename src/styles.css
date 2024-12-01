@@ -65,9 +65,9 @@ main {
   
 }
 
-.weather-forecast-icon{
-  font-size: 38px;
-  text-align: center;
+.weather-app-icon {
+  width: 88px;
+  height: 88px;
 }
 
 .weather-forecast-temperatures{
@@ -128,3 +128,7 @@ footer {
 
   color: rgba(39, 33, 66, 0.4);
 }
+
+
+
+
